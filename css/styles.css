@@ -68,26 +68,7 @@ img {
   }
 }
 
-/* @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1158px;
-  }
-} */
-/* .container {
-  width: 1158px;
-  margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -109,11 +90,6 @@ img {
   display: none;
 }
 
-.logo-part-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -121,24 +97,30 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 24px 0;
+  display: inline-block;
   color: var(--secondary-text-color-theme-dark);
 }
 .logo-part {
   color: var(--primary-background-color-theme-dark);
+}
+.page-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.logo-part-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .mobile-menu-open-btn {
   background-color: transparent;
   border: none;
   padding: 0;
 }
-.page-header {
-  padding-top: 24px;
-  padding-bottom: 22px;
-  background: #ffffff;
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+
 .mobile-menu {
   position: fixed;
   left: 0;
@@ -249,11 +231,79 @@ img {
 .mobile-social-icon {
   fill: var(--main-color);
 }
+.hero-block {
+  background-color: var(--primary-background-color-theme-dark);
+  padding-top: 112px;
+  padding-bottom: 112px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  height: 432px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (max-width: 767px) {
+  .hero-block {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-people-mobile.jpg);
+  } 
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), 
+screen and (min-resolution: 192dpi) and (max-width: 767px), 
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-block {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-people-mobile@2x.jpg);
+  }
+}
+
+.main-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  margin-bottom: 72px;
+}
+.order-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--main-color);
+  background-color: var(--secondary-text-color-theme-dark);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  display: block;
+  list-style: none;
+  min-width: 169px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--accent-color);
+} 
+
+/* Tablet */
 
 @media screen and (min-width: 768px) {
   .mobile-menu-open-btn {
     display: none;
   }
+  
   .page-nav {
     display: flex;
     align-items: center;
@@ -309,9 +359,9 @@ img {
   .contact-item {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     color: var(--primary-text-color-theme-dark);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -320,7 +370,92 @@ img {
   .contact-item:focus {
     color: var(--accent-color);
   }
+  
+  .main-text {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+  
 }
+
+  @media screen and (min-width: 768px) {
+    .hero-block {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-people-tablet.jpg);
+    } 
+  }
+  
+    
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), 
+  screen and (min-resolution: 192dpi) and (min-width: 768px), 
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero-block {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-people-tablet@2x.jpg);
+    }
+  }
+
+
+/* Tablet */
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+  .mobile-menu-open-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-contact-container {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 40px;
+}
+.contact-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+ }
+
+ .hero-block {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  height: 600px;
+}
+.main-text {
+  font-size: 56px;
+  line-height: 1.07;
+  max-width: 496px;
+  margin-bottom: 48px;
+}
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-block {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desc.jpg);    
+  }
+}
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px), 
+screen and (min-resolution: 192dpi) and (min-width: 1158px), 
+screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  hero-block {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desc@2x.jpg);
+  }
+}
+
+/* Desktop */
+
+
+
 /* .logo-part-container {
   display: flex;
   align-items: center;
@@ -401,7 +536,7 @@ img {
 } */
 
 /* Main Studio*/
-.main-section {
+/* .main-section {
   margin-left: auto;
   margin-right: auto;
 }
@@ -453,7 +588,7 @@ img {
 .order-btn:hover,
 .order-btn:focus {
   background-color: var(--accent-color);
-}
+} */
 /* Section 1 */
 .feature-name {
   font-weight: 500;
