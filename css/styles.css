@@ -230,7 +230,7 @@ img {
   display: flex;
   justify-content: flex-start;
   gap: 56px;
-  margin-top: 48px;
+  /* margin-top: 48px; */
 }
 .mobile-social-item {
   width: 40px;
