@@ -1027,7 +1027,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero-block {
+   .hero-block {
     background-image:linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)), url('../images/office-people-tablet@2x.jpg');
   }
 }
@@ -1191,7 +1191,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px), 
 screen and (min-resolution: 192dpi) and (min-width: 1158px), 
 screen and (min-resolution: 2dppx) and (min-width: 1158px) {
-  hero-block {
+  .hero-block {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-desc@2x.jpg');
   }
 }
