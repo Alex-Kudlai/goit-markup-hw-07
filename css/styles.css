@@ -273,7 +273,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero-block {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-people-mobile.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/office-people-mobile.jpg');
   } 
 }
 
@@ -557,7 +557,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
       align-items: center;  
   }  
   .feature-descr {
-   text-align: center;
+   text-align: start;
    font-weight: 500;
      }
 }
@@ -569,11 +569,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 .team-card {
   background-color: var(--secondary-text-color-theme-light);
 }
-.team-section-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-} 
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -613,7 +608,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 .team-card-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 72px;
 }
@@ -792,12 +787,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   fill: #f4f4fd;
 }
 
-/* .footer-navigation-item {
-  display: flex;
-  flex-direction: column;
-
-} */
-
 .footer-nav-item-title {
   font-weight: 500;
   font-size: 16px;
@@ -847,7 +836,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 @media screen and (min-width: 428px ) {
   .footer-form-input {
-      width: 396px;
+    width: 396px; 
   }
 }
 
@@ -1020,7 +1009,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
   @media screen and (min-width: 768px) {
     .hero-block {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-people-tablet.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/office-people-tablet.jpg');
     } 
   }
   
@@ -1184,7 +1173,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 @media screen and (min-width: 1158px) {
   .hero-block {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desc.jpg);    
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-desc.jpg');    
   }
 }
 
